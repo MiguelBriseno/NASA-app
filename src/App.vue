@@ -1,15 +1,26 @@
 <template>
   <v-app>
-    <v-main>
-      <Main />
-    </v-main>
-
-    <AppFooter />
+    <v-container fluid class="pa-0">
+      <v-row no-gutters>
+        <v-col cols="12">
+          <v-navigation-drawer app permanent>
+            <v-list density="compact" nav>
+              <v-list-item prepend-icon="mdi-telescope" title="APOD" to="/apod"></v-list-item>
+            </v-list>
+          </v-navigation-drawer>
+          <v-main>
+            <router-view />
+          </v-main>
+          <AppFooter />
+        </v-col>
+      </v-row>
+    </v-container>
   </v-app>
 </template>
 
 <script setup>
-import Main from './components/Main.vue';
-
-  //
 </script>
+
+<style>
+/* Añade cualquier estilo personalizado aquí si es necesario */
+</style>
