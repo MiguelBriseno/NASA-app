@@ -5,7 +5,9 @@
         <v-col cols="12">
           <v-navigation-drawer app permanent>
             <v-list density="compact" nav>
+              <v-list-item prepend-icon="mdi-monitor-dashboard" title="Home" to="/"></v-list-item>
               <v-list-item prepend-icon="mdi-telescope" title="APOD" to="/apod"></v-list-item>
+              <v-list-item prepend-icon="mdi-earth" title="EARTH" to="/earth"></v-list-item>
             </v-list>
           </v-navigation-drawer>
           <v-main>

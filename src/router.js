@@ -2,6 +2,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Apod from './views/APOD.vue'
 import Home from './views/Home.vue'
+import Earth from './views/Earth.vue'
 
 const routes = [
   {
@@ -13,6 +14,11 @@ const routes = [
     path: '/apod',
     name: 'Apod',
     component: Apod
+  },
+  {
+    path: '/earth',
+    name: 'Earth',
+    component: Earth
   }
 ]
 
